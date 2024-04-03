@@ -12,7 +12,7 @@ import re
 
 def clean_data():
 
-    df = pd.read_csv("solicitudes_credito.csv", sep=";")
+    df = pd.read_csv("solicitudes_credito.csv", sep=";", index_col=0)
 
     #Eliminar datos duplicados y faltantes
     df.dropna(inplace=True)
